@@ -1,0 +1,5 @@
+﻿# Static site - no build output needed
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
