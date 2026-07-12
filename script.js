@@ -84,3 +84,42 @@ function init() {
 
 window.addEventListener("resize", resizeCanvas);
 init();
+
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const nombre = String(formData.get("nombre") || "").trim();
+    const correo = String(formData.get("correo") || "").trim();
+    const necesidad = String(formData.get("necesidad") || "").trim();
+
+    if (!nombre || !correo || !necesidad) {
+      formStatus.textContent = "Por favor complete todos los campos antes de enviar la solicitud.";
+      formStatus.className = "form-status error";
+      return;
+    }
+
+    const subject = `Solicitud desde haleverse.com - ${nombre}`;
+    const body = [
+      "Hola HALEVERSE,",
+      "",
+      "Quiero compartir la siguiente necesidad:",
+      "",
+      necesidad,
+      "",
+      "Datos de contacto:",
+      `Nombre: ${nombre}`,
+      `Correo: ${correo}`,
+    ].join("\n");
+
+    const mailtoUrl = `mailto:contacto@haleverse.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+
+    formStatus.textContent = "Se preparó el correo para contacto@haleverse.com. Solo falta enviarlo desde su aplicación de correo.";
+    formStatus.className = "form-status success";
+  });
+}

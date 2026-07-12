@@ -421,6 +421,21 @@ h1 {
   cursor: pointer;
 }
 
+.form-status {
+  min-height: 24px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.form-status.success {
+  color: #047857;
+}
+
+.form-status.error {
+  color: #b91c1c;
+}
+
 .site-footer {
   display: flex;
   align-items: center;

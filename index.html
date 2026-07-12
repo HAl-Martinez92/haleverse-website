@@ -167,7 +167,7 @@
           Correo directo: <a href="mailto:contacto@haleverse.com">contacto@haleverse.com</a>
         </p>
       </div>
-      <form class="contact-form" action="mailto:contacto@haleverse.com" method="post" enctype="text/plain">
+      <form class="contact-form" id="contactForm">
         <label>
           Nombre
           <input name="nombre" type="text" placeholder="Su nombre" required>
@@ -181,6 +181,7 @@
           <textarea name="necesidad" rows="5" placeholder="Describa brevemente el proceso, problema o idea que quiere mejorar." required></textarea>
         </label>
         <button type="submit">Enviar solicitud</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </section>
   </main>
