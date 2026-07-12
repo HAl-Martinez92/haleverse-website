@@ -1,23 +1,44 @@
-﻿# HALEVERSE Website
+# HALEVERSE Website
 
-Sitio web inicial de HALEVERSE.
+Sitio web oficial de HALEVERSE.
 
-## Contenido
+## Arquitectura
 
-- Pagina principal estatica en `index.html`.
-- Identidad visual Data & Integration.
-- Logo e isotipo en SVG.
-- Formulario de contacto por `mailto:contacto@haleverse.com`.
+- App moderna en React + Vite dentro de `source/`.
+- Build estático publicado en la raíz del repositorio para Cloudflare Pages.
+- Assets de marca en `source/public/assets/`.
+- Página de agradecimiento en `source/public/gracias.html`.
 
-## Publicacion sugerida
+## Formulario
 
-Cloudflare Pages:
+El formulario usa FormSubmit por HTTPS:
 
-- Framework preset: None
-- Build command: dejar vacio
+- Destino: `contacto@haleverse.com`
+- Endpoint: `https://formsubmit.co/contacto@haleverse.com`
+- Confirmación: `/gracias.html`
+
+Nota: la primera vez que se use FormSubmit puede enviar un correo de activación a `contacto@haleverse.com`.
+
+## Desarrollo
+
+```bash
+pnpm install
+pnpm run dev
+```
+
+## Generar producción
+
+```bash
+node node_modules/vite/bin/vite.js build source --outDir ../site-build --emptyOutDir
+node scripts/copy-build-to-root.mjs
+```
+
+## Cloudflare Pages
+
+La configuración actual puede seguir sirviendo la raíz del repositorio.
+
+Si más adelante se desea que Cloudflare compile Vite directamente:
+
+- Build command: `pnpm run build && pnpm run publish:local`
 - Output directory: `/`
 
-Dominio:
-
-- `haleverse.com`
-- `www.haleverse.com`

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <rect width="1200" height="360" fill="#0A2540"/>
+  <g transform="translate(90 82) scale(1)">
+    <line x1="0" y1="0" x2="0" y2="170" stroke="#67E8F9" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+    <line x1="150" y1="0" x2="150" y2="170" stroke="#67E8F9" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+    <line x1="0" y1="85" x2="150" y2="85" stroke="#10B981" stroke-width="8" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="62" y2="53" stroke="#67E8F9" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+    <line x1="62" y1="53" x2="150" y2="0" stroke="#67E8F9" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+    <line x1="0" y1="170" x2="62" y2="117" stroke="#67E8F9" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+    <line x1="62" y1="117" x2="150" y2="170" stroke="#67E8F9" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+    <line x1="0" y1="85" x2="62" y2="53" stroke="#67E8F9" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+    <line x1="150" y1="85" x2="62" y2="117" stroke="#67E8F9" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+    <circle cx="0" cy="0" r="14" fill="#F8FAFC" stroke="#0A2540" stroke-width="5"/>
+    <circle cx="0" cy="85" r="14" fill="#10B981" stroke="#FFFFFF" stroke-width="5"/>
+    <circle cx="0" cy="170" r="14" fill="#F8FAFC" stroke="#0A2540" stroke-width="5"/>
+    <circle cx="150" cy="0" r="14" fill="#F8FAFC" stroke="#0A2540" stroke-width="5"/>
+    <circle cx="150" cy="85" r="14" fill="#10B981" stroke="#FFFFFF" stroke-width="5"/>
+    <circle cx="150" cy="170" r="14" fill="#F8FAFC" stroke="#0A2540" stroke-width="5"/>
+    <circle cx="62" cy="53" r="11" fill="#67E8F9" stroke="#F8FAFC" stroke-width="4"/>
+    <circle cx="62" cy="117" r="11" fill="#67E8F9" stroke="#F8FAFC" stroke-width="4"/>
+  </g>
+  <text x="310" y="172" font-family="Inter, Aptos, Segoe UI, Arial, sans-serif" font-size="64" font-weight="850" letter-spacing="11" fill="#F8FAFC">HALEVERSE</text>
+  <text x="315" y="219" font-family="Inter, Aptos, Segoe UI, Arial, sans-serif" font-size="18" letter-spacing="2" fill="#D8E3EF">TRANSFORMAMOS DESAFÍOS EN SOLUCIONES</text>
+  <text x="315" y="258" font-family="Inter, Aptos, Segoe UI, Arial, sans-serif" font-size="17" letter-spacing="1.2" fill="#D8E3EF">Datos · Integración · Automatización · Software</text>
+</svg>
