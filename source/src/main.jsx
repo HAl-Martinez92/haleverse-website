@@ -128,91 +128,91 @@ const services = [
   {
     icon: Workflow,
     title: "Automatización empresarial",
-    text: "Convertimos tareas repetitivas en flujos confiables para reducir tiempos, errores y reprocesos.",
+    text: "Tomamos tareas que hoy consumen horas y las convertimos en procesos simples, controlados y fáciles de repetir.",
   },
   {
     icon: GitBranch,
     title: "Datos e integraciones",
-    text: "Conectamos bases de datos, archivos, APIs y plataformas para que la información fluya con orden.",
+    text: "Unimos archivos, bases de datos, APIs y plataformas para que la información llegue donde debe llegar.",
   },
   {
     icon: Layers3,
     title: "Desarrollo de software",
-    text: "Creamos aplicaciones web, herramientas internas y soluciones a medida para necesidades concretas.",
+    text: "Creamos herramientas web e internas pensadas para resolver necesidades concretas del negocio.",
   },
   {
     icon: Database,
     title: "Oracle y SQL",
-    text: "Optimizamos consultas, procedimientos, reportes y procesos apoyados en bases de datos empresariales.",
+    text: "Mejoramos consultas, procedimientos y reportes para que los datos trabajen con más velocidad y estabilidad.",
   },
   {
     icon: FileText,
     title: "Reportes y documentos",
-    text: "Generamos salidas profesionales en Excel, Word, PDF o dashboards a partir de datos estructurados.",
+    text: "Convertimos datos en documentos, reportes y tableros claros para tomar decisiones sin rehacer trabajo manual.",
   },
   {
     icon: Network,
     title: "Innovación aplicada",
-    text: "Usamos herramientas modernas, incluida IA cuando aporta valor, para acelerar soluciones prácticas.",
+    text: "Elegimos la tecnología adecuada para cada caso, incluyendo IA solo cuando realmente mejora el resultado.",
   },
 ];
 
 const strengths = [
-  ["Entendemos antes de construir", "Analizamos el proceso, los datos y el contexto del equipo para proponer una solución realista."],
-  ["Integramos tecnología con operación", "Buscamos que cada solución encaje con la forma de trabajo del cliente, no que sea una pieza aislada."],
-  ["Priorizamos resultados medibles", "Tiempo ahorrado, errores reducidos, reportes automatizados y mejor control operativo."],
-  ["Construimos para evolucionar", "Diseñamos herramientas mantenibles, documentadas y preparadas para crecer por fases."],
+  ["Entendemos antes de construir", "Escuchamos el proceso, revisamos los datos y proponemos una solución que tenga sentido para el equipo."],
+  ["Conectamos tecnología con operación", "Diseñamos herramientas que encajan con la forma real de trabajar, no piezas aisladas difíciles de sostener."],
+  ["Nos enfocamos en resultados visibles", "Buscamos menos reprocesos, menos errores, más control y tiempo recuperado para tareas de mayor valor."],
+  ["Construimos para crecer", "Entregamos soluciones documentadas, mantenibles y listas para evolucionar por fases cuando el negocio lo necesite."],
 ];
 
 const cases = [
-  ["Excel y PDF", "Generación masiva de documentos, validaciones, consolidaciones y extracción de datos."],
-  ["Oracle y SQL", "Optimización de consultas, reportes, procedimientos y análisis de información."],
-  ["APIs y sistemas", "Integración entre aplicaciones, archivos, servicios web y bases de datos."],
-  ["Reportes automáticos", "Informes periódicos, tableros de control y documentos generados desde datos reales."],
+  ["Excel y PDF", "Automatización de archivos, documentos y validaciones que normalmente se hacen a mano."],
+  ["Oracle y SQL", "Mejoras en consultas, procedimientos y reportes para trabajar con datos de forma más confiable."],
+  ["APIs y sistemas", "Conexión entre aplicaciones, archivos, servicios web y bases de datos existentes."],
+  ["Reportes automáticos", "Informes y tableros que se generan desde datos reales, sin depender de copiar y pegar."],
 ];
 
 const portfolio = [
   {
     title: "Automatización documental",
     tag: "PDF · Word · Excel",
-    text: "Procesos para generar, unir, separar, nombrar y organizar documentos a partir de datos estructurados.",
-    result: "Menos trabajo manual y mayor trazabilidad en entregas masivas.",
+    text: "Automatizamos tareas de documentos que suelen repetirse una y otra vez: generar, unir, separar, nombrar y organizar archivos.",
+    result: "Entregas más rápidas, menos errores y mejor control sobre cada archivo procesado.",
   },
   {
     title: "Validación y limpieza de datos",
     tag: "Excel · Python · Reglas",
-    text: "Herramientas para detectar inconsistencias, duplicados, formatos inválidos y datos incompletos antes de cargar información.",
-    result: "Reducción de errores operativos y archivos listos para análisis o migración.",
+    text: "Creamos validadores que revisan archivos antes de usarlos, detectando duplicados, campos incompletos y formatos incorrectos.",
+    result: "Datos más confiables antes de cargar, analizar o migrar información.",
   },
   {
     title: "Optimización Oracle y SQL",
     tag: "Oracle · PL/SQL · Reportes",
-    text: "Revisión de consultas, procedimientos, reportes y procesos batch para mejorar tiempos de respuesta y calidad técnica.",
-    result: "Procesos más estables, mantenibles y preparados para crecer.",
+    text: "Revisamos consultas, procedimientos y reportes para encontrar cuellos de botella y mejorar la forma en que fluye la información.",
+    result: "Procesos más ágiles, estables y fáciles de mantener.",
   },
   {
     title: "Integración entre sistemas",
     tag: "APIs · Bases de datos · Archivos",
-    text: "Conexión entre plataformas, servicios web, bases de datos y archivos para eliminar reprocesos y dobles digitaciones.",
-    result: "Información sincronizada y flujos de trabajo más claros para el equipo.",
+    text: "Conectamos sistemas que hoy trabajan separados para evitar dobles registros, reprocesos y pérdida de información.",
+    result: "Equipos con datos más alineados y flujos de trabajo más claros.",
   },
   {
     title: "Reportes automáticos",
     tag: "Dashboards · PDF · Excel",
-    text: "Generación de informes periódicos, tableros de control y salidas ejecutivas a partir de fuentes de datos existentes.",
-    result: "Decisiones más rápidas con información ordenada y disponible a tiempo.",
+    text: "Diseñamos reportes que se alimentan de fuentes existentes y entregan información lista para revisar, compartir o presentar.",
+    result: "Información oportuna, ordenada y útil para decidir mejor.",
   },
   {
     title: "Forward Rush",
     tag: "Producto digital · Juego · Experiencia",
-    text: "Desarrollo de un videojuego como línea de producto digital, aplicando diseño de interacción, lógica de juego y entrega web.",
-    result: "Base para HALEVERSE Studio y futuros productos digitales propios.",
+    text: "Construcción de un videojuego como producto digital propio, combinando lógica, diseño de interacción y experiencia web.",
+    result: "Una base para crear nuevas experiencias digitales bajo HALEVERSE Studio.",
   },
   {
     title: "Proyecto Atlas",
     tag: "Spring Boot · Angular · Oracle",
-    text: "Modernización por fases de una plataforma administrativa, separando backend y frontend, integrando datos existentes y mejorando flujos operativos complejos.",
-    result: "Base tecnológica más mantenible, escalable y preparada para evolucionar consultas, reportes e integraciones.",
+    text: "Modernización por fases de una plataforma administrativa, separando capas técnicas y mejorando la experiencia de trabajo sobre procesos complejos.",
+    result: "Una base más ordenada, mantenible y preparada para evolucionar con nuevas consultas, reportes e integraciones.",
   },
 ];
 
@@ -220,28 +220,28 @@ const offers = [
   {
     icon: Workflow,
     title: "Diagnóstico de automatización",
-    text: "Analizamos un proceso repetitivo, identificamos oportunidades de mejora y entregamos una ruta clara de implementación.",
-    deliverables: ["Mapa del proceso", "Propuesta técnica", "Estimación por fases"],
+    text: "Revisamos un proceso que hoy toma demasiado tiempo y definimos una ruta práctica para automatizarlo.",
+    deliverables: ["Mapa del proceso", "Ruta de mejora", "Estimación por fases"],
   },
   {
     icon: BriefcaseBusiness,
     title: "Solución empresarial a medida",
-    text: "Construimos una herramienta concreta para resolver un problema de archivos, datos, documentos, reportes o integración.",
-    deliverables: ["Aplicación o script funcional", "Documentación", "Acompañamiento de entrega"],
+    text: "Construimos una herramienta concreta para resolver una necesidad real con archivos, datos, documentos, reportes o sistemas.",
+    deliverables: ["Herramienta funcional", "Documentación clara", "Acompañamiento de entrega"],
   },
   {
     icon: Database,
     title: "Consultoría Oracle, datos e integración",
-    text: "Apoyamos equipos que necesitan optimizar consultas, organizar datos o conectar sistemas existentes.",
-    deliverables: ["Diagnóstico técnico", "Ajustes priorizados", "Informe de recomendaciones"],
+    text: "Acompañamos equipos que necesitan ordenar información, mejorar consultas o conectar plataformas existentes.",
+    deliverables: ["Diagnóstico técnico", "Mejoras priorizadas", "Recomendaciones accionables"],
   },
 ];
 
 const salesMaterials = [
-  ["Brochure corporativo", "Documento breve para presentar HALEVERSE, servicios, fortalezas y casos de éxito."],
-  ["Plantilla de propuesta", "Formato reutilizable para cotizar proyectos con alcance, entregables, tiempos y condiciones."],
-  ["Perfil de fundador", "Texto profesional para LinkedIn y mensajes comerciales, enfocado en experiencia y resultados."],
-  ["Firma de correo", "Firma corporativa con nombre, cargo, sitio web, correo y línea de contacto."],
+  ["Brochure corporativo", "Una presentación breve para explicar qué hacemos, cómo trabajamos y qué problemas resolvemos."],
+  ["Plantilla de propuesta", "Un formato claro para presentar alcance, entregables, tiempos y próximos pasos sin improvisar."],
+  ["Perfil de fundador", "Un mensaje profesional para comunicar experiencia, criterio técnico y enfoque en resultados."],
+  ["Firma de correo", "Una firma simple y consistente para que cada contacto se sienta formal desde el primer mensaje."],
 ];
 
 function ContactForm() {
@@ -275,7 +275,7 @@ function ContactForm() {
         <ArrowRight size={18} aria-hidden="true" />
       </button>
       <p className="form-note">
-        El mensaje se enviará de forma segura a {CONTACT_EMAIL}. La primera vez FormSubmit puede pedirnos confirmar el correo de destino.
+        Recibiremos su mensaje en {CONTACT_EMAIL} y responderemos con una primera orientación sobre el caso.
       </p>
     </form>
   );
@@ -290,10 +290,10 @@ function App() {
           <NetworkBackground />
           <div className="hero-content">
             <p className="eyebrow">Datos · Integración · Automatización · Software</p>
-            <h1>Transformamos desafíos en soluciones tecnológicas.</h1>
+            <h1>Soluciones tecnológicas para trabajar mejor.</h1>
             <p className="hero-copy">
-              Conectamos datos, automatizamos procesos e integramos sistemas para ayudar a las organizaciones
-              a ahorrar tiempo, reducir errores y tomar mejores decisiones.
+              Ayudamos a equipos y empresas a ordenar información, automatizar tareas repetitivas
+              y construir herramientas que hacen más simple la operación diaria.
             </p>
             <div className="hero-actions">
               <a className="btn primary" href="#contacto">
@@ -313,10 +313,10 @@ function App() {
         <section className="section intro">
           <div className="section-kicker">Qué resolvemos</div>
           <div className="split">
-            <h2>Cuando la operación depende demasiado del trabajo manual, el crecimiento se vuelve más lento.</h2>
+            <h2>Cuando el trabajo manual se acumula, la operación pierde ritmo.</h2>
             <p>
-              HALEVERSE ayuda a equipos que trabajan con archivos dispersos, reportes repetitivos, bases de datos,
-              documentos, correos, sistemas desconectados o tareas que consumen horas cada semana.
+              HALEVERSE acompaña a equipos que trabajan con archivos dispersos, reportes repetitivos,
+              datos desconectados o tareas que consumen horas cada semana y necesitan una forma más clara de avanzar.
             </p>
           </div>
         </section>
@@ -324,7 +324,7 @@ function App() {
         <section id="servicios" className="section services">
           <div className="section-heading">
             <span className="section-kicker">Servicios</span>
-            <h2>Soluciones tecnológicas para operar mejor.</h2>
+            <h2>Tecnología práctica para procesos reales.</h2>
           </div>
           <div className="service-grid">
             {services.map(({ icon: Icon, title, text }, index) => (
@@ -343,7 +343,7 @@ function App() {
         <section id="fortalezas" className="section strengths">
           <div className="section-heading">
             <span className="section-kicker">Fortalezas</span>
-            <h2>Equipo, criterio técnico y compromiso con resultados.</h2>
+            <h2>Criterio técnico, cercanía y compromiso con el resultado.</h2>
           </div>
           <div className="strength-list">
             {strengths.map(([title, text]) => (
@@ -359,7 +359,7 @@ function App() {
         <section id="casos" className="section use-cases">
           <div className="section-heading">
             <span className="section-kicker">Casos de uso</span>
-            <h2>De información dispersa a procesos conectados.</h2>
+            <h2>Problemas comunes que podemos ordenar.</h2>
           </div>
           <div className="case-row">
             {cases.map(([title, text]) => (
@@ -374,10 +374,10 @@ function App() {
         <section id="portafolio" className="section portfolio">
           <div className="section-heading">
             <span className="section-kicker">Portafolio inicial</span>
-            <h2>Experiencia convertida en casos reutilizables.</h2>
+            <h2>Experiencia aplicada a retos reales.</h2>
             <p>
-              Estos casos se presentan de forma anonimizada y sirven como base para mostrar capacidades reales
-              sin exponer información sensible de clientes, entidades o proyectos previos.
+              Reunimos aprendizajes de proyectos y productos construidos para mostrar cómo trabajamos:
+              entender el problema, ordenar la solución y entregar algo útil para el equipo.
             </p>
           </div>
           <div className="portfolio-grid">
@@ -395,10 +395,10 @@ function App() {
         <section id="ofertas" className="section offers">
           <div className="section-heading">
             <span className="section-kicker">Ofertas comerciales</span>
-            <h2>Tres formas claras de empezar.</h2>
+            <h2>Formas simples de iniciar una conversación.</h2>
             <p>
-              El objetivo es facilitar la primera conversación comercial: problemas concretos, alcance claro
-              y entregables que el cliente pueda entender antes de comprar.
+              Podemos empezar con un diagnóstico pequeño, una solución puntual o una consultoría técnica.
+              La idea es avanzar con claridad, sin comprometer más alcance del necesario.
             </p>
           </div>
           <div className="offer-grid">
@@ -420,7 +420,7 @@ function App() {
         <section className="section sales-kit">
           <div className="section-heading">
             <span className="section-kicker">Material comercial</span>
-            <h2>Herramientas listas para vender con coherencia.</h2>
+            <h2>Comunicación clara para cada oportunidad.</h2>
           </div>
           <div className="sales-list">
             {salesMaterials.map(([title, text]) => (
@@ -436,13 +436,13 @@ function App() {
         <section className="section process">
           <div className="section-heading">
             <span className="section-kicker">Método</span>
-            <h2>Una ruta clara desde el problema hasta la solución.</h2>
+            <h2>Una forma ordenada de pasar del problema a la solución.</h2>
           </div>
           <ol className="steps">
-            <li><strong>Diagnosticar</strong><span>Entender el proceso, las fuentes de datos y el resultado esperado.</span></li>
-            <li><strong>Diseñar</strong><span>Definir alcance, arquitectura, entregables y criterios de éxito.</span></li>
-            <li><strong>Construir</strong><span>Desarrollar la solución por iteraciones y validar avances visibles.</span></li>
-            <li><strong>Entregar</strong><span>Documentar, capacitar y dejar una base lista para evolucionar.</span></li>
+            <li><strong>Diagnosticar</strong><span>Entender cómo trabaja el equipo, qué duele hoy y qué resultado espera lograr.</span></li>
+            <li><strong>Diseñar</strong><span>Definir una solución posible, con alcance claro y entregables fáciles de validar.</span></li>
+            <li><strong>Construir</strong><span>Avanzar por iteraciones, mostrando progreso visible y ajustando cuando haga falta.</span></li>
+            <li><strong>Entregar</strong><span>Dejar la solución documentada, usable y preparada para una siguiente fase.</span></li>
           </ol>
         </section>
 
@@ -451,7 +451,7 @@ function App() {
             <span className="section-kicker">Contacto</span>
             <h2>Cuéntenos qué proceso quiere mejorar.</h2>
             <p>
-              Recibimos su necesidad, la analizamos y proponemos una ruta clara para resolverla con tecnología práctica.
+              Compártanos el caso y revisaremos una primera ruta para abordarlo con una solución práctica, medible y sostenible.
             </p>
             <div className="contact-direct">
               <Mail size={19} aria-hidden="true" />
@@ -468,7 +468,7 @@ function App() {
 
       <footer className="site-footer">
         <img src="/assets/isotipo-dark.svg" alt="" aria-hidden="true" />
-        <span>HALEVERSE · Soluciones tecnológicas para conectar datos, automatizar procesos y generar resultados.</span>
+        <span>HALEVERSE · Tecnología práctica para ordenar procesos, conectar datos y construir soluciones que generan valor.</span>
       </footer>
     </>
   );

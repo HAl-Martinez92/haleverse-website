@@ -1,6 +1,8 @@
 # HALEVERSE - Portafolio inicial
 
-Los casos deben presentarse de forma anonimizada. La estructura recomendada es:
+Este portafolio reúne capacidades y aprendizajes que HALEVERSE puede convertir en soluciones para nuevos clientes.
+
+La estructura recomendada para presentar cada caso es:
 
 **Problema -> Solución -> Resultado**
 
@@ -64,4 +66,4 @@ Los casos deben presentarse de forma anonimizada. La estructura recomendada es:
 
 **Resultado:** base tecnológica más mantenible, escalable y preparada para evolucionar consultas, reportes, integraciones y flujos operativos complejos.
 
-**Nota de confidencialidad:** este caso debe comunicarse siempre bajo nombre en clave. No usar nombres de cliente, producto, entidad, módulos internos, rutas, tablas, pantallas reales ni reglas de negocio específicas.
+**Nota interna:** este caso debe comunicarse siempre bajo nombre en clave. No usar nombres de cliente, producto, entidad, módulos internos, rutas, tablas, pantallas reales ni reglas de negocio específicas.
