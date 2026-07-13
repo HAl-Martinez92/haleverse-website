@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import {
   ArrowRight,
   BarChart3,
+  BriefcaseBusiness,
   CheckCircle2,
   Database,
   FileText,
@@ -10,7 +11,9 @@ import {
   Layers3,
   Mail,
   Network,
+  PackageCheck,
   ShieldCheck,
+  Target,
   Workflow,
 } from "lucide-react";
 import "./styles.css";
@@ -113,7 +116,8 @@ function Header() {
       <nav className="main-nav" aria-label="Navegación principal">
         <a href="#servicios">Servicios</a>
         <a href="#fortalezas">Fortalezas</a>
-        <a href="#casos">Casos de uso</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#ofertas">Ofertas</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </header>
@@ -165,6 +169,73 @@ const cases = [
   ["Oracle y SQL", "Optimización de consultas, reportes, procedimientos y análisis de información."],
   ["APIs y sistemas", "Integración entre aplicaciones, archivos, servicios web y bases de datos."],
   ["Reportes automáticos", "Informes periódicos, tableros de control y documentos generados desde datos reales."],
+];
+
+const portfolio = [
+  {
+    title: "Automatización documental",
+    tag: "PDF · Word · Excel",
+    text: "Procesos para generar, unir, separar, nombrar y organizar documentos a partir de datos estructurados.",
+    result: "Menos trabajo manual y mayor trazabilidad en entregas masivas.",
+  },
+  {
+    title: "Validación y limpieza de datos",
+    tag: "Excel · Python · Reglas",
+    text: "Herramientas para detectar inconsistencias, duplicados, formatos inválidos y datos incompletos antes de cargar información.",
+    result: "Reducción de errores operativos y archivos listos para análisis o migración.",
+  },
+  {
+    title: "Optimización Oracle y SQL",
+    tag: "Oracle · PL/SQL · Reportes",
+    text: "Revisión de consultas, procedimientos, reportes y procesos batch para mejorar tiempos de respuesta y calidad técnica.",
+    result: "Procesos más estables, mantenibles y preparados para crecer.",
+  },
+  {
+    title: "Integración entre sistemas",
+    tag: "APIs · Bases de datos · Archivos",
+    text: "Conexión entre plataformas, servicios web, bases de datos y archivos para eliminar reprocesos y dobles digitaciones.",
+    result: "Información sincronizada y flujos de trabajo más claros para el equipo.",
+  },
+  {
+    title: "Reportes automáticos",
+    tag: "Dashboards · PDF · Excel",
+    text: "Generación de informes periódicos, tableros de control y salidas ejecutivas a partir de fuentes de datos existentes.",
+    result: "Decisiones más rápidas con información ordenada y disponible a tiempo.",
+  },
+  {
+    title: "Forward Rush",
+    tag: "Producto digital · Juego · Experiencia",
+    text: "Desarrollo de un videojuego como línea de producto digital, aplicando diseño de interacción, lógica de juego y entrega web.",
+    result: "Base para HALEVERSE Studio y futuros productos digitales propios.",
+  },
+];
+
+const offers = [
+  {
+    icon: Workflow,
+    title: "Diagnóstico de automatización",
+    text: "Analizamos un proceso repetitivo, identificamos oportunidades de mejora y entregamos una ruta clara de implementación.",
+    deliverables: ["Mapa del proceso", "Propuesta técnica", "Estimación por fases"],
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Solución empresarial a medida",
+    text: "Construimos una herramienta concreta para resolver un problema de archivos, datos, documentos, reportes o integración.",
+    deliverables: ["Aplicación o script funcional", "Documentación", "Acompañamiento de entrega"],
+  },
+  {
+    icon: Database,
+    title: "Consultoría Oracle, datos e integración",
+    text: "Apoyamos equipos que necesitan optimizar consultas, organizar datos o conectar sistemas existentes.",
+    deliverables: ["Diagnóstico técnico", "Ajustes priorizados", "Informe de recomendaciones"],
+  },
+];
+
+const salesMaterials = [
+  ["Brochure corporativo", "Documento breve para presentar HALEVERSE, servicios, fortalezas y casos de éxito."],
+  ["Plantilla de propuesta", "Formato reutilizable para cotizar proyectos con alcance, entregables, tiempos y condiciones."],
+  ["Perfil de fundador", "Texto profesional para LinkedIn y mensajes comerciales, enfocado en experiencia y resultados."],
+  ["Firma de correo", "Firma corporativa con nombre, cargo, sitio web, correo y línea de contacto."],
 ];
 
 function ContactForm() {
@@ -287,6 +358,68 @@ function App() {
           <div className="case-row">
             {cases.map(([title, text]) => (
               <div key={title}>
+                <strong>{title}</strong>
+                <span>{text}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="portafolio" className="section portfolio">
+          <div className="section-heading">
+            <span className="section-kicker">Portafolio inicial</span>
+            <h2>Experiencia convertida en casos reutilizables.</h2>
+            <p>
+              Estos casos se presentan de forma anonimizada y sirven como base para mostrar capacidades reales
+              sin exponer información sensible de clientes, entidades o proyectos previos.
+            </p>
+          </div>
+          <div className="portfolio-grid">
+            {portfolio.map((item) => (
+              <article key={item.title}>
+                <span>{item.tag}</span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+                <strong>{item.result}</strong>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section id="ofertas" className="section offers">
+          <div className="section-heading">
+            <span className="section-kicker">Ofertas comerciales</span>
+            <h2>Tres formas claras de empezar.</h2>
+            <p>
+              El objetivo es facilitar la primera conversación comercial: problemas concretos, alcance claro
+              y entregables que el cliente pueda entender antes de comprar.
+            </p>
+          </div>
+          <div className="offer-grid">
+            {offers.map(({ icon: Icon, title, text, deliverables }) => (
+              <article key={title}>
+                <Icon size={24} aria-hidden="true" />
+                <h3>{title}</h3>
+                <p>{text}</p>
+                <ul>
+                  {deliverables.map((deliverable) => (
+                    <li key={deliverable}><PackageCheck size={16} aria-hidden="true" />{deliverable}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section sales-kit">
+          <div className="section-heading">
+            <span className="section-kicker">Material comercial</span>
+            <h2>Herramientas listas para vender con coherencia.</h2>
+          </div>
+          <div className="sales-list">
+            {salesMaterials.map(([title, text]) => (
+              <div key={title}>
+                <Target size={21} aria-hidden="true" />
                 <strong>{title}</strong>
                 <span>{text}</span>
               </div>

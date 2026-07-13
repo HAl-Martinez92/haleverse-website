@@ -3,7 +3,20 @@ import { join, resolve } from "node:path";
 
 const repoRoot = resolve(".");
 const buildDir = join(repoRoot, "site-build");
-const keep = new Set([".git", "source", "scripts", "node_modules", "package.json", "package-lock.json", "pnpm-lock.yaml", "README.md", ".gitignore"]);
+const keep = new Set([
+  ".git",
+  "source",
+  "scripts",
+  "business",
+  "node_modules",
+  "package.json",
+  "package-lock.json",
+  "pnpm-lock.yaml",
+  "pnpm-workspace.yaml",
+  "README.md",
+  ".gitignore",
+  "wrangler.jsonc",
+]);
 
 async function exists(path) {
   try {

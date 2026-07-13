@@ -19,6 +19,24 @@ El formulario usa FormSubmit por HTTPS:
 
 Nota: la primera vez que se use FormSubmit puede enviar un correo de activación a `contacto@haleverse.com`.
 
+## SEO y material comercial
+
+El sitio incluye:
+
+- `robots.txt`
+- `sitemap.xml`
+- metadatos SEO, Open Graph y JSON-LD
+- portafolio inicial en la página
+- ofertas comerciales iniciales
+
+Los documentos editables de negocio están en `business/`:
+
+- checklist de SEO y medición
+- portafolio inicial
+- ofertas comerciales
+- kit comercial
+- roadmap de 90 días
+
 ## Desarrollo
 
 ```bash

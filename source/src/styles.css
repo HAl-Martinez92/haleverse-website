@@ -331,6 +331,141 @@ h1 {
   background: var(--ice);
 }
 
+.portfolio {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.portfolio .section-heading h2,
+.portfolio .section-heading p {
+  color: var(--white);
+}
+
+.portfolio .section-heading p {
+  color: #d8e3ef;
+}
+
+.portfolio-grid,
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.portfolio-grid article {
+  min-height: 255px;
+  padding: 22px;
+  border: 1px solid rgba(216, 227, 239, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.portfolio-grid span {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--cyan);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.portfolio-grid h3,
+.offer-grid h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.portfolio-grid p {
+  color: #d8e3ef;
+}
+
+.portfolio-grid strong {
+  display: block;
+  margin-top: 18px;
+  color: var(--green);
+}
+
+.offers {
+  background: var(--white);
+}
+
+.offer-grid article {
+  min-height: 320px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--ice);
+}
+
+.offer-grid svg {
+  color: var(--green);
+}
+
+.offer-grid h3 {
+  color: var(--navy);
+  margin-top: 18px;
+}
+
+.offer-grid p {
+  color: var(--muted);
+}
+
+.offer-grid ul {
+  display: grid;
+  gap: 9px;
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+.offer-grid li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--navy);
+  font-weight: 780;
+}
+
+.sales-kit {
+  background: var(--soft);
+}
+
+.sales-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.sales-list div {
+  min-height: 190px;
+  padding: 22px;
+  background: var(--white);
+}
+
+.sales-list svg {
+  color: var(--green);
+  margin-bottom: 18px;
+}
+
+.sales-list strong,
+.sales-list span {
+  display: block;
+}
+
+.sales-list strong {
+  color: var(--navy);
+  font-size: 19px;
+  margin-bottom: 9px;
+}
+
+.sales-list span {
+  color: var(--muted);
+}
+
 .steps {
   list-style: none;
   counter-reset: step;
@@ -503,7 +638,10 @@ h1 {
   }
 
   .service-grid,
+  .portfolio-grid,
+  .offer-grid,
   .case-row,
+  .sales-list,
   .steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -522,7 +660,10 @@ h1 {
   .hero-metrics,
   .service-grid,
   .strength-list,
+  .portfolio-grid,
+  .offer-grid,
   .case-row,
+  .sales-list,
   .steps {
     grid-template-columns: 1fr;
   }
