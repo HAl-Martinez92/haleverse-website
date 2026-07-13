@@ -601,6 +601,7 @@ h1 {
 .site-footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 14px;
   padding: 24px clamp(22px, 7vw, 104px);
   background: var(--navy);
@@ -608,9 +609,41 @@ h1 {
   font-size: 14px;
 }
 
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .site-footer img {
   width: 42px;
   height: 42px;
+}
+
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 13px;
+  border: 1px solid rgba(216, 227, 239, 0.24);
+  border-radius: 6px;
+  color: #d8e3ef;
+  font-weight: 820;
+  transition: border-color 0.16s ease, color 0.16s ease, background 0.16s ease;
+}
+
+.footer-social svg {
+  color: var(--green);
+}
+
+.footer-social:hover,
+.footer-social:focus-visible {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(16, 185, 129, 0.62);
+  color: var(--white);
+  outline: none;
 }
 
 @media (max-width: 920px) {
@@ -671,5 +704,10 @@ h1 {
   .contact {
     padding-top: 56px;
     padding-bottom: 56px;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }

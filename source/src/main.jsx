@@ -10,6 +10,7 @@ import {
   FileText,
   GitBranch,
   Layers3,
+  Linkedin,
   Mail,
   Network,
   ShieldCheck,
@@ -485,8 +486,20 @@ function App() {
       </main>
 
       <footer className="site-footer">
-        <img src="/assets/isotipo-dark.svg" alt="" aria-hidden="true" />
-        <span>HALEVERSE · Tecnología práctica para ordenar procesos, conectar datos y construir soluciones que generan valor.</span>
+        <div className="footer-brand">
+          <img src="/assets/isotipo-dark.svg" alt="" aria-hidden="true" />
+          <span>HALEVERSE · Tecnología práctica para ordenar procesos, conectar datos y construir soluciones que generan valor.</span>
+        </div>
+        <a
+          className="footer-social"
+          href="https://www.linkedin.com/company/haleverse"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="HALEVERSE en LinkedIn"
+        >
+          <Linkedin size={18} aria-hidden="true" />
+          <span>LinkedIn</span>
+        </a>
       </footer>
     </>
   );
