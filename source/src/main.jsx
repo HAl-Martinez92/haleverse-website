@@ -12,9 +12,7 @@ import {
   Mail,
   Network,
   PackageCheck,
-  Download,
   ShieldCheck,
-  Target,
   Workflow,
 } from "lucide-react";
 import "./styles.css";
@@ -259,13 +257,6 @@ const offers = [
   },
 ];
 
-const salesMaterials = [
-  ["Brochure corporativo", "Una presentación breve para explicar qué hacemos, cómo trabajamos y qué problemas resolvemos."],
-  ["Plantilla de propuesta", "Un formato claro para presentar alcance, entregables, tiempos y próximos pasos sin improvisar."],
-  ["Perfil de fundador", "Un mensaje profesional para comunicar experiencia, criterio técnico y enfoque en resultados."],
-  ["Firma de correo", "Una firma simple y consistente para que cada contacto se sienta formal desde el primer mensaje."],
-];
-
 function ContactForm() {
   const nextUrl = "https://haleverse.com/gracias.html";
 
@@ -456,30 +447,6 @@ function App() {
                   ))}
                 </ul>
               </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="section sales-kit">
-          <div className="section-heading">
-            <span className="section-kicker">Material comercial</span>
-            <h2>Comunicación clara para cada oportunidad.</h2>
-            <p>
-              Si desea compartir una presentación breve de HALEVERSE, puede descargar nuestro brochure corporativo
-              y usarlo como material de apoyo en una primera conversación.
-            </p>
-            <a className="download-link" href="/brochure.pdf" target="_blank" rel="noreferrer">
-              <Download size={18} aria-hidden="true" />
-              Descargar brochure
-            </a>
-          </div>
-          <div className="sales-list">
-            {salesMaterials.map(([title, text]) => (
-              <div key={title}>
-                <Target size={21} aria-hidden="true" />
-                <strong>{title}</strong>
-                <span>{text}</span>
-              </div>
             ))}
           </div>
         </section>

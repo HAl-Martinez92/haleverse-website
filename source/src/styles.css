@@ -462,60 +462,6 @@ h1 {
   font-weight: 780;
 }
 
-.sales-kit {
-  background: var(--soft);
-}
-
-.download-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  min-height: 44px;
-  padding: 0 16px;
-  border-radius: 6px;
-  background: var(--navy);
-  color: var(--white);
-  font-weight: 850;
-}
-
-.download-link svg {
-  color: var(--green);
-}
-
-.sales-list {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  border: 1px solid var(--line);
-  background: var(--line);
-}
-
-.sales-list div {
-  min-height: 190px;
-  padding: 22px;
-  background: var(--white);
-}
-
-.sales-list svg {
-  color: var(--green);
-  margin-bottom: 18px;
-}
-
-.sales-list strong,
-.sales-list span {
-  display: block;
-}
-
-.sales-list strong {
-  color: var(--navy);
-  font-size: 19px;
-  margin-bottom: 9px;
-}
-
-.sales-list span {
-  color: var(--muted);
-}
-
 .steps {
   list-style: none;
   counter-reset: step;
@@ -692,7 +638,6 @@ h1 {
   .offer-grid,
   .proof-grid,
   .case-row,
-  .sales-list,
   .steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -715,7 +660,6 @@ h1 {
   .offer-grid,
   .proof-grid,
   .case-row,
-  .sales-list,
   .steps {
     grid-template-columns: 1fr;
   }
