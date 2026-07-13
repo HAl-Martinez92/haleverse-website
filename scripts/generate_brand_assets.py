@@ -189,7 +189,7 @@ def linkedin_cover():
         d.line((i, 0, i + 120, 191), fill="#103A5F", width=2)
     official_isotype(d, 52, 32, 128)
     d.text((218, 43), "HALEVERSE", font=font(42, True), fill=WHITE)
-    d.text((221, 98), "Soluciones tecnológicas para trabajar mejor.", font=font(24, True), fill=MUTED)
+    d.text((221, 98), "Tecnología que ordena procesos y genera resultados.", font=font(23, True), fill=MUTED)
     d.text((824, 72), "Datos · Integración", font=font(18, True), fill=GREEN)
     d.text((824, 101), "Automatización · Software", font=font(18, True), fill=GREEN)
     d.text((824, 132), "haleverse.com", font=font(18), fill=MUTED)
