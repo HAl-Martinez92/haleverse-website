@@ -216,6 +216,27 @@ const portfolio = [
   },
 ];
 
+const proofCases = [
+  {
+    title: "Documentos organizados sin reprocesos",
+    context: "Un equipo necesitaba procesar y organizar documentos de forma repetitiva, dedicando horas a clasificar, generar y validar archivos.",
+    action: "Diseñamos una solución para automatizar el manejo de documentos, aplicar reglas de validación y entregar archivos organizados de forma consistente.",
+    outcome: "El proceso quedó más claro, rápido y controlado, con menos errores en cada entrega.",
+  },
+  {
+    title: "Modernización de plataforma administrativa",
+    context: "Una plataforma requería evolucionar su arquitectura para mejorar la experiencia de usuario, facilitar el mantenimiento y preparar nuevos flujos de trabajo.",
+    action: "Propusimos una modernización por fases, separando responsabilidades técnicas e integrando frontend, backend y datos existentes.",
+    outcome: "La solución quedó mejor organizada y preparada para incorporar nuevas consultas, reportes e integraciones.",
+  },
+  {
+    title: "Reportes listos para decidir",
+    context: "Un proceso dependía de reportes armados manualmente desde diferentes fuentes, con demoras, reprocesos y riesgo de errores.",
+    action: "Creamos una ruta para consolidar datos y generar informes listos para revisar, compartir o presentar.",
+    outcome: "La información quedó más ordenada, disponible a tiempo y útil para tomar mejores decisiones.",
+  },
+];
+
 const offers = [
   {
     icon: Workflow,
@@ -387,6 +408,27 @@ function App() {
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
                 <strong>{item.result}</strong>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section proof">
+          <div className="section-heading">
+            <span className="section-kicker">Casos destacados</span>
+            <h2>Resultados que podemos construir.</h2>
+            <p>
+              Algunos retos se repiten en muchas organizaciones. Estos ejemplos muestran cómo abordamos
+              problemas frecuentes con soluciones prácticas, ordenadas y medibles.
+            </p>
+          </div>
+          <div className="proof-grid">
+            {proofCases.map((item) => (
+              <article key={item.title}>
+                <h3>{item.title}</h3>
+                <p><strong>Situación inicial:</strong> {item.context}</p>
+                <p><strong>Qué hicimos:</strong> {item.action}</p>
+                <p><strong>Resultado:</strong> {item.outcome}</p>
               </article>
             ))}
           </div>

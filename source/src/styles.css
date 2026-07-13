@@ -391,6 +391,40 @@ h1 {
   background: var(--white);
 }
 
+.proof {
+  background: var(--white);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.proof-grid article {
+  min-height: 360px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--ice);
+}
+
+.proof-grid h3 {
+  color: var(--navy);
+  font-size: 23px;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.proof-grid p {
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.proof-grid strong {
+  color: var(--navy);
+}
+
 .offer-grid article {
   min-height: 320px;
   padding: 24px;
@@ -640,6 +674,7 @@ h1 {
   .service-grid,
   .portfolio-grid,
   .offer-grid,
+  .proof-grid,
   .case-row,
   .sales-list,
   .steps {
@@ -662,6 +697,7 @@ h1 {
   .strength-list,
   .portfolio-grid,
   .offer-grid,
+  .proof-grid,
   .case-row,
   .sales-list,
   .steps {

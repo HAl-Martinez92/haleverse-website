@@ -67,3 +67,31 @@ La estructura recomendada para presentar cada caso es:
 **Resultado:** base tecnológica más mantenible, escalable y preparada para evolucionar consultas, reportes, integraciones y flujos operativos complejos.
 
 **Nota interna:** este caso debe comunicarse siempre bajo nombre en clave. No usar nombres de cliente, producto, entidad, módulos internos, rutas, tablas, pantallas reales ni reglas de negocio específicas.
+
+# Casos destacados para comunicación comercial
+
+Estos textos pueden usarse en la página web, brochure o propuestas. No mencionan clientes, entidades ni información sensible.
+
+## Documentos organizados sin reprocesos
+
+**Situación inicial:** un equipo necesitaba procesar y organizar documentos de forma repetitiva, dedicando horas a clasificar, generar y validar archivos.
+
+**Qué hicimos:** diseñamos una solución para automatizar el manejo de documentos, aplicar reglas de validación y entregar archivos organizados de forma consistente.
+
+**Resultado:** el proceso quedó más claro, rápido y controlado, con menos errores en cada entrega.
+
+## Modernización de plataforma administrativa
+
+**Situación inicial:** una plataforma requería evolucionar su arquitectura para mejorar la experiencia de usuario, facilitar el mantenimiento y preparar nuevos flujos de trabajo.
+
+**Qué hicimos:** propusimos una modernización por fases, separando responsabilidades técnicas e integrando frontend, backend y datos existentes.
+
+**Resultado:** la solución quedó mejor organizada y preparada para incorporar nuevas consultas, reportes e integraciones.
+
+## Reportes listos para decidir
+
+**Situación inicial:** un proceso dependía de reportes armados manualmente desde diferentes fuentes, con demoras, reprocesos y riesgo de errores.
+
+**Qué hicimos:** creamos una ruta para consolidar datos y generar informes listos para revisar, compartir o presentar.
+
+**Resultado:** la información quedó más ordenada, disponible a tiempo y útil para tomar mejores decisiones.
