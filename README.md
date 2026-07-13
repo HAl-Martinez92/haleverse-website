@@ -42,3 +42,10 @@ Si más adelante se desea que Cloudflare compile Vite directamente:
 - Build command: `pnpm run build && pnpm run publish:local`
 - Output directory: `/`
 
+## Cloudflare Workers / Assets
+
+Si Cloudflare despliega el sitio con Wrangler, el archivo `wrangler.jsonc` publica la carpeta generada por Vite:
+
+- Build command: `pnpm run build`
+- Assets directory: `./site-build`
+- Config file: `wrangler.jsonc`
