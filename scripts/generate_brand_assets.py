@@ -52,20 +52,45 @@ def draw_wrapped(draw, xy, text, fnt, fill, max_width, line_gap=8):
     return y
 
 
-def network_h(draw, x, y, scale=1.0, line=CYAN, dot=GREEN):
-    pts = [
-        (x, y),
-        (x + 32 * scale, y + 42 * scale),
-        (x + 64 * scale, y),
-        (x, y + 92 * scale),
-        (x + 32 * scale, y + 50 * scale),
-        (x + 64 * scale, y + 92 * scale),
+def official_isotype(draw, x, y, size):
+    scale = size / 512
+    draw.rounded_rectangle((x, y, x + size, y + size), radius=int(96 * scale), fill=NAVY)
+
+    def tx(px):
+        return x + (142 + px * 1.5) * scale
+
+    def ty(py):
+        return y + (142 + py * 1.5) * scale
+
+    def line(x1, y1, x2, y2, fill, width, alpha=None):
+        # Alpha is already represented by the lighter cyan against navy in this raster version.
+        draw.line((tx(x1), ty(y1), tx(x2), ty(y2)), fill=fill, width=max(1, int(width * scale)))
+
+    line(0, 0, 0, 170, CYAN, 5)
+    line(150, 0, 150, 170, CYAN, 5)
+    line(0, 85, 150, 85, GREEN, 8)
+    line(0, 0, 62, 53, CYAN, 5)
+    line(62, 53, 150, 0, CYAN, 5)
+    line(0, 170, 62, 117, CYAN, 5)
+    line(62, 117, 150, 170, CYAN, 5)
+    line(0, 85, 62, 53, CYAN, 5)
+    line(150, 85, 62, 117, CYAN, 5)
+
+    circles = [
+        (0, 0, 14, ICE, NAVY, 5),
+        (0, 85, 14, GREEN, WHITE, 5),
+        (0, 170, 14, ICE, NAVY, 5),
+        (150, 0, 14, ICE, NAVY, 5),
+        (150, 85, 14, GREEN, WHITE, 5),
+        (150, 170, 14, ICE, NAVY, 5),
+        (62, 53, 11, CYAN, ICE, 4),
+        (62, 117, 11, CYAN, ICE, 4),
     ]
-    for a, b in [(0, 1), (1, 2), (0, 3), (3, 4), (4, 5), (2, 5), (1, 4)]:
-        draw.line([pts[a], pts[b]], fill=line, width=max(3, int(5 * scale)))
-    r = max(5, int(8 * scale))
-    for px, py in pts:
-        draw.ellipse((px - r, py - r, px + r, py + r), fill=dot)
+    for cx, cy, r, fill, stroke, sw in circles:
+        px = tx(cx)
+        py = ty(cy)
+        rr = r * scale
+        draw.ellipse((px - rr, py - rr, px + rr, py + rr), fill=fill, outline=stroke, width=max(1, int(sw * scale)))
 
 
 def save_both(img, name):
@@ -79,7 +104,7 @@ def business_card_front():
     img = Image.new("RGB", (1050, 600), NAVY)
     d = ImageDraw.Draw(img)
     d.rectangle((0, 0, 1050, 600), fill=NAVY)
-    network_h(d, 785, 145, 2.0)
+    official_isotype(d, 700, 92, 300)
     d.text((70, 62), "HALEVERSE", font=font(42, True), fill=WHITE)
     d.line((70, 122, 980, 122), fill="#D8E3EF", width=2)
     d.text((70, 210), "Hugo Martínez", font=font(58, True), fill=WHITE)
@@ -100,7 +125,7 @@ def business_card_back():
     d.text((70, 268), "para ordenar procesos,", font=font(48, True), fill=NAVY)
     d.text((70, 331), "conectar datos", font=font(48, True), fill=NAVY)
     d.text((70, 394), "y generar valor.", font=font(48, True), fill=NAVY)
-    network_h(d, 820, 365, 1.35)
+    official_isotype(d, 790, 300, 210)
     d.text((70, 516), "Datos · Integración · Automatización · Software", font=font(22, True), fill=GREEN)
     save_both(img, "haleverse-business-card-back.png")
     return img
@@ -112,7 +137,7 @@ def story_asset(name, headline, body, footer):
     d.rectangle((0, 0, 1080, 1920), fill=NAVY)
     for i in range(0, 1080, 135):
         d.line((i, 0, i + 520, 1920), fill="#103A5F", width=2)
-    network_h(d, 690, 260, 2.4)
+    official_isotype(d, 650, 220, 300)
     d.text((88, 112), "HALEVERSE", font=font(48, True), fill=WHITE)
     d.text((88, 198), "DATOS · INTEGRACIÓN · AUTOMATIZACIÓN · SOFTWARE", font=font(22, True), fill=GREEN)
     y = 520
@@ -130,12 +155,12 @@ def square_asset():
     img = Image.new("RGB", (1080, 1080), ICE)
     d = ImageDraw.Draw(img)
     d.rectangle((0, 0, 1080, 1080), fill=ICE)
-    network_h(d, 760, 100, 2.0)
+    official_isotype(d, 805, 70, 190)
     d.text((80, 78), "HALEVERSE", font=font(48, True), fill=NAVY)
-    d.text((80, 178), "Soluciones tecnológicas", font=font(70, True), fill=NAVY)
-    d.text((80, 260), "para trabajar mejor.", font=font(70, True), fill=NAVY)
+    d.text((80, 270), "Soluciones tecnológicas", font=font(70, True), fill=NAVY)
+    d.text((80, 352), "para trabajar mejor.", font=font(70, True), fill=NAVY)
     body = "Automatizamos procesos, conectamos datos y construimos herramientas para equipos que quieren operar con más orden."
-    draw_wrapped(d, (84, 420), body, font(34), SLATE, 800, 11)
+    draw_wrapped(d, (84, 512), body, font(34), SLATE, 820, 11)
     tags = ["Procesos claros", "Datos conectados", "Resultados medibles"]
     x = 80
     for tag in tags:

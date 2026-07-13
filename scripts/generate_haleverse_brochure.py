@@ -86,22 +86,48 @@ def footer(c, dark=False):
     c.drawRightString(PAGE_W - 22 * mm, 16 * mm, "haleverse.com")
 
 
-def network_mark(c, x, y, scale=1, color=CYAN):
-    c.setStrokeColor(color)
-    c.setFillColor(GREEN)
-    c.setLineWidth(1.2 * scale)
-    pts = [
-        (x, y),
-        (x + 18 * scale, y + 22 * scale),
-        (x + 36 * scale, y),
-        (x, y - 30 * scale),
-        (x + 18 * scale, y - 8 * scale),
-        (x + 36 * scale, y - 30 * scale),
+def official_isotype(c, x, y, size):
+    """Draw the official HALEVERSE isotipo based on source/public/assets/isotipo-dark.svg."""
+    scale = size / 512
+    c.setFillColor(NAVY)
+    c.roundRect(x, y - size, size, size, 96 * scale, fill=1, stroke=0)
+
+    def tx(px):
+        return x + (142 + px * 1.5) * scale
+
+    def ty(py):
+        return y - (142 + py * 1.5) * scale
+
+    def line(x1, y1, x2, y2, color, width):
+        c.setStrokeColor(color)
+        c.setLineWidth(width * scale)
+        c.line(tx(x1), ty(y1), tx(x2), ty(y2))
+
+    line(0, 0, 0, 170, CYAN, 5)
+    line(150, 0, 150, 170, CYAN, 5)
+    line(0, 85, 150, 85, GREEN, 8)
+    line(0, 0, 62, 53, CYAN, 5)
+    line(62, 53, 150, 0, CYAN, 5)
+    line(0, 170, 62, 117, CYAN, 5)
+    line(62, 117, 150, 170, CYAN, 5)
+    line(0, 85, 62, 53, CYAN, 5)
+    line(150, 85, 62, 117, CYAN, 5)
+
+    circles = [
+        (0, 0, 14, ICE, NAVY, 5),
+        (0, 85, 14, GREEN, WHITE, 5),
+        (0, 170, 14, ICE, NAVY, 5),
+        (150, 0, 14, ICE, NAVY, 5),
+        (150, 85, 14, GREEN, WHITE, 5),
+        (150, 170, 14, ICE, NAVY, 5),
+        (62, 53, 11, CYAN, ICE, 4),
+        (62, 117, 11, CYAN, ICE, 4),
     ]
-    for a, b in [(0, 1), (1, 2), (0, 3), (3, 4), (4, 5), (2, 5), (1, 4)]:
-        c.line(pts[a][0], pts[a][1], pts[b][0], pts[b][1])
-    for px, py in pts:
-        c.circle(px, py, 2.8 * scale, fill=1, stroke=0)
+    for cx, cy, r, fill, stroke, sw in circles:
+        c.setFillColor(fill)
+        c.setStrokeColor(stroke)
+        c.setLineWidth(sw * scale)
+        c.circle(tx(cx), ty(cy), r * scale, fill=1, stroke=1)
 
 
 def pill(c, x, y, text, fill=ICE, stroke=LINE, fg=NAVY):
@@ -138,7 +164,7 @@ def page1(c, styles):
     c.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
     header(c, 1, styles, dark=True)
     footer(c, dark=True)
-    network_mark(c, PAGE_W - 70 * mm, PAGE_H - 76 * mm, 1.8, CYAN)
+    official_isotype(c, PAGE_W - 74 * mm, PAGE_H - 72 * mm, 44 * mm)
 
     x = 22 * mm
     y = PAGE_H - 55 * mm
