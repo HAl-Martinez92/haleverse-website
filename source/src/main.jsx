@@ -11,7 +11,6 @@ import {
   Layers3,
   Mail,
   Network,
-  PackageCheck,
   ShieldCheck,
   Workflow,
 } from "lucide-react";
@@ -116,7 +115,7 @@ function Header() {
         <a href="#servicios">Servicios</a>
         <a href="#fortalezas">Fortalezas</a>
         <a href="#portafolio">Portafolio</a>
-        <a href="#ofertas">Ofertas</a>
+        <a href="#como-ayudamos">Cómo ayudamos</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </header>
@@ -236,24 +235,24 @@ const proofCases = [
   },
 ];
 
-const offers = [
+const helpPaths = [
   {
     icon: Workflow,
-    title: "Diagnóstico de automatización",
-    text: "Revisamos un proceso que hoy toma demasiado tiempo y definimos una ruta práctica para automatizarlo.",
-    deliverables: ["Mapa del proceso", "Ruta de mejora", "Estimación por fases"],
+    title: "Ordenar un proceso",
+    text: "Para equipos que tienen tareas repetitivas, archivos dispersos o pasos manuales que consumen demasiado tiempo.",
+    outcome: "Ayudamos a entender el flujo actual, encontrar puntos de mejora y definir una ruta práctica para simplificarlo.",
   },
   {
     icon: BriefcaseBusiness,
-    title: "Solución empresarial a medida",
-    text: "Construimos una herramienta concreta para resolver una necesidad real con archivos, datos, documentos, reportes o sistemas.",
-    deliverables: ["Herramienta funcional", "Documentación clara", "Acompañamiento de entrega"],
+    title: "Construir una solución",
+    text: "Para empresas que necesitan una herramienta concreta para automatizar, integrar, reportar o controlar mejor su operación.",
+    outcome: "Diseñamos y desarrollamos soluciones a medida, pensadas para ser útiles desde el primer uso y fáciles de sostener.",
   },
   {
     icon: Database,
-    title: "Consultoría Oracle, datos e integración",
-    text: "Acompañamos equipos que necesitan ordenar información, mejorar consultas o conectar plataformas existentes.",
-    deliverables: ["Diagnóstico técnico", "Mejoras priorizadas", "Recomendaciones accionables"],
+    title: "Mejorar datos y sistemas",
+    text: "Para organizaciones que ya tienen bases, reportes o plataformas, pero necesitan más claridad, estabilidad o velocidad.",
+    outcome: "Trabajamos sobre lo existente para conectar información, mejorar consultas y facilitar decisiones con datos más confiables.",
   },
 ];
 
@@ -386,7 +385,7 @@ function App() {
 
         <section id="portafolio" className="section portfolio">
           <div className="section-heading">
-            <span className="section-kicker">Portafolio inicial</span>
+            <span className="section-kicker">Experiencia aplicada</span>
             <h2>Experiencia aplicada a retos reales.</h2>
             <p>
               Reunimos aprendizajes de proyectos y productos construidos para mostrar cómo trabajamos:
@@ -426,26 +425,22 @@ function App() {
           </div>
         </section>
 
-        <section id="ofertas" className="section offers">
+        <section id="como-ayudamos" className="section offers">
           <div className="section-heading">
-            <span className="section-kicker">Ofertas comerciales</span>
-            <h2>Formas simples de iniciar una conversación.</h2>
+            <span className="section-kicker">Cómo podemos ayudarle</span>
+            <h2>Empezamos por el problema, no por la herramienta.</h2>
             <p>
-              Podemos empezar con un diagnóstico pequeño, una solución puntual o una consultoría técnica.
-              La idea es avanzar con claridad, sin comprometer más alcance del necesario.
+              Cada organización llega con un punto de dolor distinto. Nuestro trabajo es entenderlo,
+              ordenar las opciones y construir una solución que tenga sentido para el equipo.
             </p>
           </div>
           <div className="offer-grid">
-            {offers.map(({ icon: Icon, title, text, deliverables }) => (
+            {helpPaths.map(({ icon: Icon, title, text, outcome }) => (
               <article key={title}>
                 <Icon size={24} aria-hidden="true" />
                 <h3>{title}</h3>
                 <p>{text}</p>
-                <ul>
-                  {deliverables.map((deliverable) => (
-                    <li key={deliverable}><PackageCheck size={16} aria-hidden="true" />{deliverable}</li>
-                  ))}
-                </ul>
+                <strong>{outcome}</strong>
               </article>
             ))}
           </div>
