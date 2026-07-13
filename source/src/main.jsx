@@ -12,6 +12,7 @@ import {
   Mail,
   Network,
   PackageCheck,
+  Download,
   ShieldCheck,
   Target,
   Workflow,
@@ -463,6 +464,14 @@ function App() {
           <div className="section-heading">
             <span className="section-kicker">Material comercial</span>
             <h2>Comunicación clara para cada oportunidad.</h2>
+            <p>
+              Si desea compartir una presentación breve de HALEVERSE, puede descargar nuestro brochure corporativo
+              y usarlo como material de apoyo en una primera conversación.
+            </p>
+            <a className="download-link" href="/brochure.pdf" target="_blank" rel="noreferrer">
+              <Download size={18} aria-hidden="true" />
+              Descargar brochure
+            </a>
           </div>
           <div className="sales-list">
             {salesMaterials.map(([title, text]) => (

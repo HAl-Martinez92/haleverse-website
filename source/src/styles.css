@@ -466,6 +466,22 @@ h1 {
   background: var(--soft);
 }
 
+.download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 6px;
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 850;
+}
+
+.download-link svg {
+  color: var(--green);
+}
+
 .sales-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

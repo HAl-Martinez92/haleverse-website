@@ -36,6 +36,20 @@ Los documentos editables de negocio están en `business/`:
 - ofertas comerciales
 - kit comercial
 - roadmap de 90 días
+- brochure corporativo
+- tarjeta de presentación
+- imágenes para WhatsApp, Instagram y Facebook
+
+Material publicado después del deploy:
+
+- `https://haleverse.com/brochure.pdf`
+- `https://haleverse.com/media/haleverse-business-card-front.png`
+- `https://haleverse.com/media/haleverse-business-card-back.png`
+- `https://haleverse.com/media/haleverse-business-card.pdf`
+- `https://haleverse.com/media/haleverse-whatsapp-status.png`
+- `https://haleverse.com/media/haleverse-instagram-story.png`
+- `https://haleverse.com/media/haleverse-facebook-story.png`
+- `https://haleverse.com/media/haleverse-social-post-square.png`
 
 ## Desarrollo
 
