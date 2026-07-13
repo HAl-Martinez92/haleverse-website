@@ -52,3 +52,16 @@ Los casos deben presentarse de forma anonimizada. La estructura recomendada es:
 
 **Resultado:** base para futuras experiencias interactivas, juegos web y productos digitales reutilizables.
 
+## 7. Proyecto Atlas
+
+**Nombre público:** Proyecto Atlas.
+
+**Categoría:** Spring Boot, Angular, Oracle y arquitectura empresarial.
+
+**Problema:** una plataforma administrativa requería una ruta de modernización que permitiera evolucionar interfaces, separar responsabilidades técnicas y mejorar la mantenibilidad sin exponer detalles sensibles del dominio ni de la operación interna.
+
+**Solución:** modernización por fases basada en backend desacoplado con Spring Boot, frontend moderno con Angular e integración controlada con datos existentes en Oracle.
+
+**Resultado:** base tecnológica más mantenible, escalable y preparada para evolucionar consultas, reportes, integraciones y flujos operativos complejos.
+
+**Nota de confidencialidad:** este caso debe comunicarse siempre bajo nombre en clave. No usar nombres de cliente, producto, entidad, módulos internos, rutas, tablas, pantallas reales ni reglas de negocio específicas.

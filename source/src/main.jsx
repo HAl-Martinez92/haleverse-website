@@ -208,6 +208,12 @@ const portfolio = [
     text: "Desarrollo de un videojuego como línea de producto digital, aplicando diseño de interacción, lógica de juego y entrega web.",
     result: "Base para HALEVERSE Studio y futuros productos digitales propios.",
   },
+  {
+    title: "Proyecto Atlas",
+    tag: "Spring Boot · Angular · Oracle",
+    text: "Modernización por fases de una plataforma administrativa, separando backend y frontend, integrando datos existentes y mejorando flujos operativos complejos.",
+    result: "Base tecnológica más mantenible, escalable y preparada para evolucionar consultas, reportes e integraciones.",
+  },
 ];
 
 const offers = [
