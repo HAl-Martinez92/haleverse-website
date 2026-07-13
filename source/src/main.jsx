@@ -6,6 +6,7 @@ import {
   BriefcaseBusiness,
   CheckCircle2,
   Database,
+  Download,
   FileText,
   GitBranch,
   Layers3,
@@ -469,6 +470,10 @@ function App() {
             <div className="contact-direct">
               <Mail size={19} aria-hidden="true" />
               <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            </div>
+            <div className="contact-download">
+              <Download size={19} aria-hidden="true" />
+              <a href="/brochure.pdf" target="_blank" rel="noreferrer">Descargar brochure corporativo</a>
             </div>
             <div className="contact-assurance">
               <ShieldCheck size={20} aria-hidden="true" />

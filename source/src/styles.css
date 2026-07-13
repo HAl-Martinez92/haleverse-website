@@ -507,6 +507,7 @@ h1 {
 }
 
 .contact-direct,
+.contact-download,
 .contact-assurance {
   display: flex;
   align-items: center;
@@ -517,13 +518,20 @@ h1 {
 }
 
 .contact-direct svg,
+.contact-download svg,
 .contact-assurance svg {
   color: var(--green);
   flex: 0 0 auto;
 }
 
-.contact-direct a {
+.contact-direct a,
+.contact-download a {
   border-bottom: 2px solid var(--green);
+}
+
+.contact-download {
+  color: var(--navy);
+  font-weight: 820;
 }
 
 .contact-assurance {
