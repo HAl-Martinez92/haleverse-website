@@ -173,6 +173,29 @@ def square_asset():
     save_both(img, "haleverse-social-post-square.png")
 
 
+def linkedin_avatar():
+    img = Image.new("RGB", (800, 800), NAVY)
+    d = ImageDraw.Draw(img)
+    d.rectangle((0, 0, 800, 800), fill=NAVY)
+    official_isotype(d, 120, 120, 560)
+    save_both(img, "haleverse-linkedin-logo.png")
+
+
+def linkedin_cover():
+    img = Image.new("RGB", (1128, 191), NAVY)
+    d = ImageDraw.Draw(img)
+    d.rectangle((0, 0, 1128, 191), fill=NAVY)
+    for i in range(-180, 1128, 120):
+        d.line((i, 0, i + 120, 191), fill="#103A5F", width=2)
+    official_isotype(d, 52, 32, 128)
+    d.text((218, 43), "HALEVERSE", font=font(42, True), fill=WHITE)
+    d.text((221, 98), "Soluciones tecnológicas para trabajar mejor.", font=font(24, True), fill=MUTED)
+    d.text((824, 72), "Datos · Integración", font=font(18, True), fill=GREEN)
+    d.text((824, 101), "Automatización · Software", font=font(18, True), fill=GREEN)
+    d.text((824, 132), "haleverse.com", font=font(18), fill=MUTED)
+    save_both(img, "haleverse-linkedin-cover.png")
+
+
 def main():
     business_card_front()
     back = business_card_back()
@@ -199,6 +222,8 @@ def main():
         "Conozca HALEVERSE",
     )
     square_asset()
+    linkedin_avatar()
+    linkedin_cover()
     print(OUT)
     print(PUBLIC)
 
