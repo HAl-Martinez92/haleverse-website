@@ -270,6 +270,7 @@ function ContactForm() {
       <input type="hidden" name="_subject" value="Nueva solicitud desde haleverse.com" />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_next" value={nextUrl} />
+      <input type="hidden" name="Tratamiento de datos" value="Aceptado mediante casilla obligatoria" />
       <input type="text" name="_honey" className="hidden-field" tabIndex="-1" autoComplete="off" />
 
       <label>
@@ -283,6 +284,13 @@ function ContactForm() {
       <label>
         Necesidad
         <textarea name="Necesidad" rows="5" placeholder="Describa brevemente el proceso, problema o idea que quiere mejorar." required />
+      </label>
+      <label className="privacy-consent">
+        <input name="Autorizacion" type="checkbox" value="Autorizo" required />
+        <span>
+          Autorizo a HALEVERSE S.A.S. a tratar mis datos para atender esta solicitud, de acuerdo con la{` `}
+          <a href="/privacidad.html" target="_blank" rel="noreferrer">Política de Tratamiento de Datos Personales</a>.
+        </span>
       </label>
       <button type="submit">
         Enviar solicitud
@@ -490,16 +498,19 @@ function App() {
           <img src="/assets/isotipo-dark.svg" alt="" aria-hidden="true" />
           <span>HALEVERSE · Tecnología práctica para ordenar procesos, conectar datos y construir soluciones que generan valor.</span>
         </div>
-        <a
-          className="footer-social"
-          href="https://www.linkedin.com/company/haleverse"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="HALEVERSE en LinkedIn"
-        >
-          <Linkedin size={18} aria-hidden="true" />
-          <span>LinkedIn</span>
-        </a>
+        <div className="footer-links">
+          <a href="/privacidad.html">Tratamiento de datos</a>
+          <a
+            className="footer-social"
+            href="https://www.linkedin.com/company/haleverse"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="HALEVERSE en LinkedIn"
+          >
+            <Linkedin size={18} aria-hidden="true" />
+            <span>LinkedIn</span>
+          </a>
+        </div>
       </footer>
     </>
   );
