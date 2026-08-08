@@ -468,6 +468,23 @@ h1 {
   color: var(--green);
 }
 
+.portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 18px;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 850;
+  text-decoration: underline;
+  text-decoration-color: rgba(103, 232, 249, 0.55);
+  text-underline-offset: 5px;
+}
+
+.portfolio-link:hover {
+  color: var(--cyan);
+}
+
 .offers {
   background: var(--white);
 }

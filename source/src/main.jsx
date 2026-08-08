@@ -20,6 +20,7 @@ import "./styles.css";
 
 const CONTACT_EMAIL = "contacto@haleverse.com";
 const DIAGNOSTIC_URL = "/diagnostico/";
+const JETBREAKER_GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.humargames.jetbreaker&hl=es_CO";
 
 function NetworkBackground() {
   const canvasRef = useRef(null);
@@ -160,10 +161,10 @@ const services = [
 ];
 
 const strengths = [
-  ["Entendemos antes de construir", "Escuchamos el proceso, revisamos los datos y proponemos una solución que tenga sentido para el equipo."],
-  ["Conectamos tecnología con operación", "Diseñamos herramientas que encajan con la forma real de trabajar, no piezas aisladas difíciles de sostener."],
-  ["Nos enfocamos en resultados visibles", "Buscamos menos reprocesos, menos errores, más control y tiempo recuperado para tareas de mayor valor."],
-  ["Construimos para crecer", "Entregamos soluciones documentadas, mantenibles y listas para evolucionar por fases cuando el negocio lo necesite."],
+  ["Diagnóstico antes del desarrollo", "Entendemos el proceso, los datos y el resultado esperado antes de proponer tecnología. Así cada decisión responde a una necesidad real."],
+  ["Soluciones que encajan en la operación", "Integramos herramientas nuevas con lo que el equipo ya usa, evitando islas de información y cambios difíciles de sostener."],
+  ["Avances que se pueden comprobar", "Trabajamos por entregas claras y verificables para reducir reprocesos, controlar riesgos y mostrar valor desde las primeras fases."],
+  ["Continuidad más allá de la entrega", "Construimos soluciones documentadas, mantenibles y preparadas para evolucionar sin depender de una sola persona o de rehacer el trabajo."],
 ];
 
 const cases = [
@@ -205,16 +206,30 @@ const portfolio = [
     result: "Información oportuna, ordenada y útil para decidir mejor.",
   },
   {
-    title: "Forward Rush",
-    tag: "Producto digital · Juego · Experiencia",
-    text: "Construcción de un videojuego como producto digital propio, combinando lógica, diseño de interacción y experiencia web.",
-    result: "Una base para crear nuevas experiencias digitales bajo HALEVERSE Studio.",
+    title: "JetBreaker",
+    tag: "Producto propio · Android · Videojuego",
+    text: "Videojuego desarrollado como producto digital propio, con distintos modos de juego, progresión y una experiencia diseñada para dispositivos móviles.",
+    result: "Un producto publicado que reúne desarrollo, diseño de interacción y evolución continua bajo HALEVERSE Studio.",
+    url: JETBREAKER_GOOGLE_PLAY_URL,
+    linkLabel: "Ver en Google Play",
   },
   {
     title: "Proyecto Atlas",
     tag: "Spring Boot · Angular · Oracle",
     text: "Modernización por fases de una plataforma administrativa, separando capas técnicas y mejorando la experiencia de trabajo sobre procesos complejos.",
     result: "Una base más ordenada, mantenible y preparada para evolucionar con nuevas consultas, reportes e integraciones.",
+  },
+  {
+    title: "Proyecto Nébula",
+    tag: "Producto en desarrollo · Plataforma modular",
+    text: "Desarrollo reservado de una plataforma multiempresa que conecta operación, trazabilidad, información y experiencias públicas en un mismo ecosistema.",
+    result: "El sector, el alcance funcional y la identidad comercial se mantienen bajo reserva mientras avanza la validación del producto.",
+  },
+  {
+    title: "AstraStock",
+    tag: "Proyecto colaborativo · SaaS empresarial",
+    text: "Plataforma desarrollada en colaboración para convertir información operativa en control financiero, trazabilidad de activos y decisiones oportunas de abastecimiento.",
+    result: "Una operación más visible, con mejor continuidad, menos capital inmovilizado y datos listos para decidir.",
   },
 ];
 
@@ -393,7 +408,11 @@ function App() {
         <section id="fortalezas" className="section strengths">
           <div className="section-heading">
             <span className="section-kicker">Fortalezas</span>
-            <h2>Criterio técnico, cercanía y compromiso con el resultado.</h2>
+            <h2>Menos improvisación. Más control, continuidad y resultados.</h2>
+            <p>
+              Combinamos criterio técnico y cercanía con una forma de trabajo que permite validar cada avance
+              y construir soluciones que el equipo pueda sostener.
+            </p>
           </div>
           <div className="strength-list">
             {strengths.map(([title, text]) => (
@@ -426,8 +445,8 @@ function App() {
             <span className="section-kicker">Experiencia aplicada</span>
             <h2>Experiencia aplicada a retos reales.</h2>
             <p>
-              Reunimos aprendizajes de proyectos y productos construidos para mostrar cómo trabajamos:
-              entender el problema, ordenar la solución y entregar algo útil para el equipo.
+              Reunimos proyectos y productos que muestran cómo trabajamos. Algunas iniciativas en desarrollo
+              se presentan con nombres reservados para proteger su identidad y alcance comercial.
             </p>
           </div>
           <div className="portfolio-grid">
@@ -437,6 +456,12 @@ function App() {
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
                 <strong>{item.result}</strong>
+                {item.url && (
+                  <a className="portfolio-link" href={item.url} target="_blank" rel="noreferrer">
+                    {item.linkLabel}
+                    <ArrowRight size={16} aria-hidden="true" />
+                  </a>
+                )}
               </article>
             ))}
           </div>
