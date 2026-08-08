@@ -19,7 +19,7 @@ import {
 import "./styles.css";
 
 const CONTACT_EMAIL = "contacto@haleverse.com";
-const DIAGNOSTIC_URL = "https://radar.haleverse.com";
+const DIAGNOSTIC_URL = "/diagnostico/";
 const JETBREAKER_GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.humargames.jetbreaker&hl=es_CO";
 
 function NetworkBackground() {
