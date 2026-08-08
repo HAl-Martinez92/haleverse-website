@@ -73,6 +73,12 @@ a {
   outline: none;
 }
 
+.main-nav .nav-highlight {
+  color: var(--white);
+  border-bottom-color: var(--green);
+  font-weight: 800;
+}
+
 .hero {
   position: relative;
   min-height: 92vh;
@@ -231,6 +237,79 @@ h1 {
 .use-cases,
 .contact {
   background: var(--white);
+}
+
+.diagnostic-offer {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.65fr);
+  gap: clamp(34px, 7vw, 92px);
+  align-items: center;
+  background: var(--soft);
+}
+
+.diagnostic-offer h2 {
+  max-width: 760px;
+}
+
+.diagnostic-offer-copy > p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.diagnostic-points {
+  display: grid;
+  gap: 13px;
+  max-width: 780px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.diagnostic-points li {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 10px;
+  align-items: start;
+  color: var(--navy);
+  font-weight: 720;
+}
+
+.diagnostic-points svg {
+  color: var(--green);
+  margin-top: 2px;
+}
+
+.diagnostic-cta-card {
+  display: grid;
+  gap: 16px;
+  padding: clamp(24px, 4vw, 38px);
+  color: var(--white);
+  background: var(--navy);
+  border-radius: 10px;
+  box-shadow: 0 24px 64px rgba(10, 37, 64, 0.18);
+}
+
+.diagnostic-cta-card > span {
+  color: var(--cyan);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.diagnostic-cta-card > strong {
+  font-size: 27px;
+  line-height: 1.12;
+}
+
+.diagnostic-cta-card p {
+  margin: 0;
+  color: #d8e3ef;
+}
+
+.diagnostic-cta-card small {
+  color: #a9bacb;
+  line-height: 1.5;
 }
 
 .section-heading {
@@ -715,7 +794,8 @@ h1 {
   }
 
   .split,
-  .contact {
+  .contact,
+  .diagnostic-offer {
     grid-template-columns: 1fr;
   }
 
@@ -809,6 +889,10 @@ h1 {
 
   .section,
   .contact {
+    padding: 54px 18px;
+  }
+
+  .diagnostic-offer {
     padding: 54px 18px;
   }
 

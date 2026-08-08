@@ -19,6 +19,7 @@ import {
 import "./styles.css";
 
 const CONTACT_EMAIL = "contacto@haleverse.com";
+const DIAGNOSTIC_URL = "/diagnostico/";
 
 function NetworkBackground() {
   const canvasRef = useRef(null);
@@ -114,6 +115,7 @@ function Header() {
         <img src="/assets/logo-horizontal-dark.svg" alt="HALEVERSE" className="brand-logo" />
       </a>
       <nav className="main-nav" aria-label="Navegación principal">
+        <a className="nav-highlight" href="#diagnostico">Diagnóstico gratuito</a>
         <a href="#servicios">Servicios</a>
         <a href="#fortalezas">Fortalezas</a>
         <a href="#portafolio">Portafolio</a>
@@ -318,8 +320,8 @@ function App() {
               y construir herramientas que hacen más simple la operación diaria.
             </p>
             <div className="hero-actions">
-              <a className="btn primary" href="#contacto">
-                Solicitar una reunión
+              <a className="btn primary" href={DIAGNOSTIC_URL}>
+                Solicitar diagnóstico gratuito
                 <ArrowRight size={18} aria-hidden="true" />
               </a>
               <a className="btn secondary" href="#servicios">Ver servicios</a>
@@ -340,6 +342,32 @@ function App() {
               HALEVERSE acompaña a equipos que trabajan con archivos dispersos, reportes repetitivos,
               datos desconectados o tareas que consumen horas cada semana y necesitan una forma más clara de avanzar.
             </p>
+          </div>
+        </section>
+
+        <section id="diagnostico" className="section diagnostic-offer">
+          <div className="diagnostic-offer-copy">
+            <span className="section-kicker">Diagnóstico digital gratuito</span>
+            <h2>Identifique una mejora concreta para su negocio.</h2>
+            <p>
+              Revisamos su presencia digital y un proceso clave —agenda, pedidos, seguimiento,
+              inventario o atención al cliente— para entregarle oportunidades claras y priorizadas.
+            </p>
+            <ul className="diagnostic-points">
+              <li><CheckCircle2 size={19} aria-hidden="true" /><span>Una revisión inicial preparada por el equipo de HALEVERSE.</span></li>
+              <li><CheckCircle2 size={19} aria-hidden="true" /><span>Recomendaciones explicadas sin tecnicismos y sin compromiso comercial.</span></li>
+              <li><CheckCircle2 size={19} aria-hidden="true" /><span>Contacto únicamente después de su autorización y confirmación por WhatsApp.</span></li>
+            </ul>
+          </div>
+          <div className="diagnostic-cta-card">
+            <span>01</span>
+            <strong>Cuéntenos sobre su negocio</strong>
+            <p>Complete el formulario en menos de tres minutos y confirme su número desde WhatsApp.</p>
+            <a className="btn primary" href={DIAGNOSTIC_URL}>
+              Comenzar diagnóstico
+              <ArrowRight size={18} aria-hidden="true" />
+            </a>
+            <small>Sus datos se conservan con consentimiento auditable y pueden retirarse en cualquier momento.</small>
           </div>
         </section>
 
