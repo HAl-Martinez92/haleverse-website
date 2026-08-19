@@ -6,6 +6,7 @@ const buildDir = join(repoRoot, "site-build");
 const keep = new Set([
   ".git",
   "source",
+  "worker",
   "scripts",
   "business",
   "node_modules",
