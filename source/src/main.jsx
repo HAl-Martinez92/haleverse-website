@@ -120,6 +120,7 @@ function Header() {
         <a href="#fortalezas">Fortalezas</a>
         <a href="#portafolio">Portafolio</a>
         <a href="#como-ayudamos">Cómo ayudamos</a>
+        <a href="/ecas.html">ECAS Platform</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </header>
